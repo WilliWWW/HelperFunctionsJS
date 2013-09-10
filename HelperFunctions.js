@@ -59,12 +59,12 @@ function selectItemByValue(elmnt, value){
     }
 }
 
-function createInputButtonElement(text, id, clickEvent) {
+function createInputButtonElement(text, id, className, clickEvent) {
     if( text != "" && text != null && id != "" && id != null && clickEvent != null ){
         var input = document.createElement('INPUT');
         input.type = 'button'; 
         input.value = text;
-	input.className="epunkt-button";
+	input.className= className;
 	input.onclick = clickEvent;
 	input.id = id;
 	input.style.marginBottom = "5px";
