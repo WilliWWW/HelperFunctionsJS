@@ -59,14 +59,13 @@ function selectItemByValue(elmnt, value){
     }
 }
 
-function createInputButtonElement(text, id, className, clickEvent) {
-    if( text != "" && text != null && id != "" && id != null && clickEvent != null ){
+function createInputButtonElement(text, id, className) {
+    if( text != "" && text != null && id != "" && id != null){
         var input = document.createElement('INPUT');
         input.type = 'button'; 
         input.value = text;
+	input.id = id;     
 	input.className= className;
-	input.onclick = clickEvent;
-	input.id = id;
 	input.style.marginBottom = "5px";
 	input.style.marginTop = "5px";
 	input.style.backgroundColor = "#D20032";
