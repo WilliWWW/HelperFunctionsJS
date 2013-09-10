@@ -58,3 +58,24 @@ function selectItemByValue(elmnt, value){
         elmnt.selectedIndex = i;
     }
 }
+
+function createInputButtonElement(text, id, clickEvent) {
+    if( text != "" && text != null && id != "" && id != null && clickEvent != null ){
+        var input = document.createElement('INPUT');
+        input.type = 'button'; 
+        input.value = text;
+	input.className="epunkt-button";
+	input.onclick = clickEvent;
+	input.id = id;
+	input.style.marginBottom = "5px";
+	input.style.marginTop = "5px";
+	input.style.backgroundColor = "#D20032";
+	input.style.fontWeight = "bolder";
+	input.style.fontSize = "12px";
+	input.style.color = "white";
+    
+	return input;
+    }else{
+	return null;
+    }
+}
