@@ -79,3 +79,8 @@ function createInputButtonElement(text, id, clickEvent) {
 	return null;
     }
 }
+
+//Insert a node after anoder node
+function insertAfter(referenceNode, newNode) {
+    referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+}
