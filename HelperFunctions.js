@@ -83,3 +83,17 @@ function createInputButtonElement(text, id, className) {
 function insertAfter(referenceNode, newNode) {
     referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
 }
+
+//returns an string of actual date and time
+function actualDateTimeString(){	
+	var now = new Date();
+	var day = addLeadingZeros(1,2,now.getDate());
+	var month = now.getMonth();
+	month += 1;
+	month = addLeadingZeros(1,2,month);
+	
+	var hour = addLeadingZeros(1,2,now.getHours());
+	var min = addLeadingZeros(1,2,now.getMinutes());
+	
+	return actualDateTime = day + '-' + month + ' ' + hour + ':' + min;
+}
