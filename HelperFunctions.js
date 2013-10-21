@@ -59,7 +59,10 @@ function selectItemByValue(elmnt, value){
     }
 }
 
-function createInputButtonElement(text, id, className) {
+function createInputButtonElement(text, id, className, fontSize) {
+    //Set default size
+    fontSize = typeof fontSize !== 'undefined' ? fontSize : 12px;
+	
     if( text != "" && text != null && id != "" && id != null){
         var input = document.createElement('INPUT');
         input.type = 'button'; 
@@ -70,7 +73,7 @@ function createInputButtonElement(text, id, className) {
 	input.style.marginTop = "5px";
 	input.style.backgroundColor = "#D20032";
 	input.style.fontWeight = "bolder";
-	input.style.fontSize = "12px";
+	input.style.fontSize = fontSize;
 	input.style.color = "white";
     
 	return input;
