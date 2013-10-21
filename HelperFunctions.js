@@ -61,7 +61,7 @@ function selectItemByValue(elmnt, value){
 
 function createInputButtonElement(text, id, className, fontSize) {
     //Set default size
-    fontSize = typeof fontSize !== 'undefined' ? fontSize : 12px;
+    fontSize = typeof fontSize !== 'undefined' ? fontSize : '12px';
 	
     if( text != "" && text != null && id != "" && id != null){
         var input = document.createElement('INPUT');
