@@ -84,7 +84,7 @@ function insertAfter(referenceNode, newNode) {
     referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
 }
 
-//returns an string of actual date and time
+//returns a string of actual date and time
 function actualDateTimeString(){	
 	var now = new Date();
 	var day = addLeadingZeros(1,2,now.getDate());
