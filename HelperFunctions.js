@@ -100,3 +100,12 @@ function actualDateTimeString(){
 	
 	return actualDateTime = day + '-' + month + ' ' + hour + ':' + min;
 }
+
+//returns the first part of a block for settings area
+function checkbox_Use_Block(setting_id, label, divId) {
+	var html = "";
+	html += "<h5 class='erGM_subHeadline'>";
+	html += "<input type=\"checkbox\" " + (eval(setting_id) ? "checked=\"checked\"" : "") + " id=\"" + setting_id + "\" onClick=\"$('#" + divId + "').toggleClass( 'darkClass' );\"> ";
+	html += label + "</h5>";
+	return html;
+}
