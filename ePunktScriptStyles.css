@@ -42,7 +42,7 @@ h5.erGM_subHeadline {
 #erSetting_overlay input[type=button] {
     font-size: 120%; 
     font-weight: bold; 		
-    background-color: #D20032; 
+    background-color: #D20032 !important; 
     border: medium none; 
     border-radius: 5px 5px 5px 5px; 
     color: #FFFFFF; 
