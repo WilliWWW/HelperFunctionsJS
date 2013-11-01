@@ -100,3 +100,14 @@ function actualDateTimeString(){
 	
 	return actualDateTime = day + '-' + month + ' ' + hour + ':' + min;
 }
+
+
+function testEval(insertedSetting){
+	alert( 'testEval' + eval(insertedSetting) );
+		
+}
+function testWithoutEval(insertedSetting){
+	alert( 'testWithoutEval' + insertedSetting );
+		
+}
+
